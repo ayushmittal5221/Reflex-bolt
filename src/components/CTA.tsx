@@ -37,69 +37,76 @@ const CTA: React.FC = () => {
           </div>
         </div>
         
-        {/* App screenshots */}
-        <div className="flex flex-wrap justify-center items-center gap-8 max-w-6xl mx-auto">
-          {/* Dashboard Card */}
-          <div className="relative group">
-            <div className="bg-white p-3 rounded-2xl shadow-2xl rotate-3 transition-transform duration-500 hover:rotate-0">
-              <div className="relative overflow-hidden rounded-xl">
-                <img 
-                  src="/1.jpg" 
-                  alt="Dashboard" 
-                  className="w-64 h-auto object-cover"
-                  style={{ 
-                    clipPath: 'inset(60px 0 80px 0)',
-                    marginTop: '-60px',
-                    marginBottom: '-80px'
-                  }}
-                />
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-blue-600 to-transparent p-4">
-                  <div className="text-white font-semibold text-sm">Dashboard</div>
-                  <div className="text-white/80 text-xs">Track your progress</div>
-                </div>
-              </div>
+        {/* App screenshots with headings */}
+        <div className="max-w-6xl mx-auto">
+          {/* Headings */}
+          <div className="flex justify-center items-center gap-8 mb-8">
+            <div className="text-center w-64">
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Dashboard</h3>
+              <p className="text-sm text-gray-600">Track your progress</p>
+            </div>
+            <div className="text-center w-72">
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Test Builder</h3>
+              <p className="text-sm text-gray-600">Create custom tests</p>
+            </div>
+            <div className="text-center w-64">
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Notes</h3>
+              <p className="text-sm text-gray-600">Concise study material</p>
             </div>
           </div>
           
-          {/* Test Builder Card - Center and larger */}
-          <div className="relative z-10 group">
-            <div className="bg-white p-3 rounded-2xl shadow-3xl scale-110">
-              <div className="relative overflow-hidden rounded-xl">
-                <img 
-                  src="/2.jpg" 
-                  alt="Test Builder" 
-                  className="w-72 h-auto object-cover"
-                  style={{ 
-                    clipPath: 'inset(60px 0 80px 0)',
-                    marginTop: '-60px',
-                    marginBottom: '-80px'
-                  }}
-                />
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-teal-600 to-transparent p-4">
-                  <div className="text-white font-semibold text-sm">Test Builder</div>
-                  <div className="text-white/80 text-xs">Create custom tests</div>
+          {/* App screenshot cards */}
+          <div className="flex flex-wrap justify-center items-center gap-8">
+            {/* Dashboard Card */}
+            <div className="relative group">
+              <div className="bg-white p-3 rounded-2xl shadow-2xl rotate-3 transition-transform duration-500 hover:rotate-0">
+                <div className="relative overflow-hidden rounded-xl">
+                  <img 
+                    src="/1.jpg" 
+                    alt="Dashboard" 
+                    className="w-64 h-auto object-cover"
+                    style={{ 
+                      clipPath: 'inset(60px 0 80px 0)',
+                      marginTop: '-60px',
+                      marginBottom: '-80px'
+                    }}
+                  />
                 </div>
               </div>
             </div>
-          </div>
-          
-          {/* Notes Card */}
-          <div className="relative group">
-            <div className="bg-white p-3 rounded-2xl shadow-2xl -rotate-3 transition-transform duration-500 hover:rotate-0">
-              <div className="relative overflow-hidden rounded-xl">
-                <img 
-                  src="/3.jpg" 
-                  alt="Notes" 
-                  className="w-64 h-auto object-cover"
-                  style={{ 
-                    clipPath: 'inset(60px 0 80px 0)',
-                    marginTop: '-60px',
-                    marginBottom: '-80px'
-                  }}
-                />
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-blue-700 to-transparent p-4">
-                  <div className="text-white font-semibold text-sm">Notes</div>
-                  <div className="text-white/80 text-xs">Concise study material</div>
+            
+            {/* Test Builder Card - Center and larger */}
+            <div className="relative z-10 group">
+              <div className="bg-white p-3 rounded-2xl shadow-3xl scale-110">
+                <div className="relative overflow-hidden rounded-xl">
+                  <img 
+                    src="/2.jpg" 
+                    alt="Test Builder" 
+                    className="w-72 h-auto object-cover"
+                    style={{ 
+                      clipPath: 'inset(60px 0 80px 0)',
+                      marginTop: '-60px',
+                      marginBottom: '-80px'
+                    }}
+                  />
+                </div>
+              </div>
+            </div>
+            
+            {/* Notes Card */}
+            <div className="relative group">
+              <div className="bg-white p-3 rounded-2xl shadow-2xl -rotate-3 transition-transform duration-500 hover:rotate-0">
+                <div className="relative overflow-hidden rounded-xl">
+                  <img 
+                    src="/3.jpg" 
+                    alt="Notes" 
+                    className="w-64 h-auto object-cover"
+                    style={{ 
+                      clipPath: 'inset(60px 0 80px 0)',
+                      marginTop: '-60px',
+                      marginBottom: '-80px'
+                    }}
+                  />
                 </div>
               </div>
             </div>
