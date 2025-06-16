@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { Zap } from 'lucide-react';
 
 const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -23,8 +22,12 @@ const Header: React.FC = () => {
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
         <a href="#" className="flex items-center space-x-2">
-          <div className="bg-gradient-to-r from-teal-500 to-blue-500 p-1.5 rounded-md">
-            <Zap size={24} className="text-white" />
+          <div className="w-8 h-8 flex items-center justify-center">
+            <img 
+              src="/image.png" 
+              alt="Reflex Prep Logo" 
+              className="w-full h-full object-contain"
+            />
           </div>
           <span className={`font-bold text-xl transition-colors duration-300 ${
             isScrolled ? 'text-gray-800' : 'text-white'

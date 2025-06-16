@@ -1,5 +1,5 @@
 import React from 'react';
-import { Download, Facebook, Mail, Phone, Twitter, Zap } from 'lucide-react';
+import { Download, Facebook, Mail, Phone, Twitter } from 'lucide-react';
 import { APP_LINKS, LEGAL_LINKS } from '../utils/constants';
 
 const Footer: React.FC = () => {
@@ -10,8 +10,12 @@ const Footer: React.FC = () => {
           {/* Column 1 - About */}
           <div>
             <div className="flex items-center mb-4">
-              <div className="bg-gradient-to-r from-teal-500 to-blue-500 p-1.5 rounded-md mr-2">
-                <Zap size={18} className="text-white" />
+              <div className="w-6 h-6 flex items-center justify-center mr-2">
+                <img 
+                  src="/image.png" 
+                  alt="Reflex Prep Logo" 
+                  className="w-full h-full object-contain"
+                />
               </div>
               <span className="font-bold text-lg">Reflex Prep</span>
             </div>
