@@ -164,7 +164,7 @@ export const SOCIAL_LINKS: SocialLink[] = [
 ];
 
 export const LEGAL_LINKS = [
-  { id: 1, name: 'Terms of Use', url: '#' },
-  { id: 2, name: 'Privacy Policy', url: '#' },
-  { id: 3, name: 'Refund Policy', url: '#' },
+  { id: 1, name: 'Terms of Use', url: 'https://reflexprep.com/tos' },
+  { id: 2, name: 'Privacy Policy', url: 'https://reflexprep.com/tos#privacy-policy' },
+  { id: 3, name: 'Refund Policy', url: 'https://reflexprep.com/tos#refund-policy' },
 ];
