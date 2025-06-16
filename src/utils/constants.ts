@@ -26,7 +26,7 @@ export const PLANS: Plan[] = [
     id: 2,
     title: '12 Months Plan',
     duration: 12,
-    price: 1499,
+    price: 1799,
     features: [
       'Access to 10,000+ PYQs',
       'Complete handwritten notes',
@@ -42,7 +42,7 @@ export const PLANS: Plan[] = [
     id: 3,
     title: '24 Months Plan',
     duration: 24,
-    price: 2499,
+    price: 2099,
     features: [
       'Access to 10,000+ PYQs',
       'Complete handwritten notes',
@@ -58,7 +58,7 @@ export const PLANS: Plan[] = [
     id: 4,
     title: '36 Months Plan',
     duration: 36,
-    price: 2999,
+    price: 2399,
     features: [
       'Access to 10,000+ PYQs',
       'Complete handwritten notes',
