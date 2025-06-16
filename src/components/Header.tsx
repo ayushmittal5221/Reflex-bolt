@@ -37,6 +37,7 @@ const Header: React.FC = () => {
           <NavLink href="#features" isScrolled={isScrolled}>Features</NavLink>
           <NavLink href="#plans" isScrolled={isScrolled}>Plans</NavLink>
           <NavLink href="#testimonials" isScrolled={isScrolled}>Testimonials</NavLink>
+          <ExternalNavLink href="https://reflexprep.blog/" isScrolled={isScrolled}>Blogs</ExternalNavLink>
           <NavLink href="#why-reflex" isScrolled={isScrolled}>Why Us</NavLink>
           <a
             href="https://app.reflexprep.com/"
@@ -74,6 +75,27 @@ const NavLink: React.FC<NavLinkProps> = ({ href, children, isScrolled }) => {
   return (
     <a 
       href={href} 
+      className={`font-medium hover:text-teal-500 transition-colors duration-300 ${
+        isScrolled ? 'text-gray-700' : 'text-white'
+      }`}
+    >
+      {children}
+    </a>
+  );
+};
+
+interface ExternalNavLinkProps {
+  href: string;
+  children: React.ReactNode;
+  isScrolled: boolean;
+}
+
+const ExternalNavLink: React.FC<ExternalNavLinkProps> = ({ href, children, isScrolled }) => {
+  return (
+    <a 
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
       className={`font-medium hover:text-teal-500 transition-colors duration-300 ${
         isScrolled ? 'text-gray-700' : 'text-white'
       }`}
