@@ -38,84 +38,77 @@ const CTA: React.FC = () => {
         </div>
         
         {/* App screenshots */}
-        <div className="flex flex-wrap justify-center items-center gap-6 max-w-6xl mx-auto">
-          <div className="relative">
-            <div className="bg-white p-2 rounded-xl shadow-xl rotate-3">
-              <div className="bg-gray-100 rounded-lg overflow-hidden h-64 w-44">
-                <div className="bg-teal-500 text-white p-3">
-                  <div className="text-sm font-semibold">Dashboard</div>
-                </div>
-                <div className="p-3">
-                  <div className="bg-white rounded p-2 mb-2 shadow-sm">
-                    <div className="w-full h-2 bg-blue-100 rounded-full mb-1"></div>
-                    <div className="w-3/4 h-2 bg-blue-100 rounded-full"></div>
-                  </div>
-                  <div className="bg-white rounded p-2 mb-2 shadow-sm">
-                    <div className="w-full h-2 bg-blue-100 rounded-full mb-1"></div>
-                    <div className="w-1/2 h-2 bg-blue-100 rounded-full"></div>
-                  </div>
-                  <div className="bg-white rounded p-2 shadow-sm">
-                    <div className="w-full h-2 bg-blue-100 rounded-full mb-1"></div>
-                    <div className="w-2/3 h-2 bg-blue-100 rounded-full"></div>
-                  </div>
+        <div className="flex flex-wrap justify-center items-center gap-8 max-w-6xl mx-auto">
+          {/* Dashboard Card */}
+          <div className="relative group">
+            <div className="bg-white p-3 rounded-2xl shadow-2xl rotate-3 transition-transform duration-500 hover:rotate-0">
+              <div className="relative overflow-hidden rounded-xl">
+                <img 
+                  src="/1.jpg" 
+                  alt="Dashboard" 
+                  className="w-64 h-auto object-cover"
+                  style={{ 
+                    clipPath: 'inset(60px 0 80px 0)',
+                    marginTop: '-60px',
+                    marginBottom: '-80px'
+                  }}
+                />
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-blue-600 to-transparent p-4">
+                  <div className="text-white font-semibold text-sm">Dashboard</div>
+                  <div className="text-white/80 text-xs">Track your progress</div>
                 </div>
               </div>
             </div>
           </div>
           
-          <div className="relative z-10">
-            <div className="bg-white p-2 rounded-xl shadow-2xl">
-              <div className="bg-gray-100 rounded-lg overflow-hidden h-72 w-48">
-                <div className="bg-blue-500 text-white p-3">
-                  <div className="text-sm font-semibold">Test Builder</div>
-                </div>
-                <div className="p-3">
-                  <div className="bg-white rounded p-2 mb-2 shadow-sm">
-                    <div className="w-full h-3 bg-teal-100 rounded-full"></div>
-                  </div>
-                  <div className="bg-white rounded p-2 mb-2 shadow-sm">
-                    <div className="w-full h-10 bg-blue-100 rounded"></div>
-                  </div>
-                  <div className="grid grid-cols-2 gap-2 mt-3">
-                    <div className="bg-white p-2 rounded shadow-sm border border-blue-200">
-                      <div className="w-full h-2 bg-blue-100 rounded-full"></div>
-                    </div>
-                    <div className="bg-white p-2 rounded shadow-sm border border-blue-200">
-                      <div className="w-full h-2 bg-blue-100 rounded-full"></div>
-                    </div>
-                    <div className="bg-white p-2 rounded shadow-sm border border-blue-200">
-                      <div className="w-full h-2 bg-blue-100 rounded-full"></div>
-                    </div>
-                    <div className="bg-white p-2 rounded shadow-sm border border-blue-200">
-                      <div className="w-full h-2 bg-blue-100 rounded-full"></div>
-                    </div>
-                  </div>
+          {/* Test Builder Card - Center and larger */}
+          <div className="relative z-10 group">
+            <div className="bg-white p-3 rounded-2xl shadow-3xl scale-110">
+              <div className="relative overflow-hidden rounded-xl">
+                <img 
+                  src="/2.jpg" 
+                  alt="Test Builder" 
+                  className="w-72 h-auto object-cover"
+                  style={{ 
+                    clipPath: 'inset(60px 0 80px 0)',
+                    marginTop: '-60px',
+                    marginBottom: '-80px'
+                  }}
+                />
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-teal-600 to-transparent p-4">
+                  <div className="text-white font-semibold text-sm">Test Builder</div>
+                  <div className="text-white/80 text-xs">Create custom tests</div>
                 </div>
               </div>
             </div>
           </div>
           
-          <div className="relative">
-            <div className="bg-white p-2 rounded-xl shadow-xl -rotate-3">
-              <div className="bg-gray-100 rounded-lg overflow-hidden h-64 w-44">
-                <div className="bg-blue-600 text-white p-3">
-                  <div className="text-sm font-semibold">Notes</div>
-                </div>
-                <div className="p-3">
-                  <div className="bg-white rounded p-2 mb-2 shadow-sm">
-                    <div className="w-full h-20 bg-gray-100 rounded mb-1"></div>
-                    <div className="w-full h-2 bg-blue-100 rounded-full mt-2"></div>
-                    <div className="w-2/3 h-2 bg-blue-100 rounded-full mt-1"></div>
-                  </div>
-                  <div className="bg-white rounded p-2 shadow-sm">
-                    <div className="w-full h-2 bg-blue-100 rounded-full mb-1"></div>
-                    <div className="w-1/2 h-2 bg-blue-100 rounded-full"></div>
-                  </div>
+          {/* Notes Card */}
+          <div className="relative group">
+            <div className="bg-white p-3 rounded-2xl shadow-2xl -rotate-3 transition-transform duration-500 hover:rotate-0">
+              <div className="relative overflow-hidden rounded-xl">
+                <img 
+                  src="/3.jpg" 
+                  alt="Notes" 
+                  className="w-64 h-auto object-cover"
+                  style={{ 
+                    clipPath: 'inset(60px 0 80px 0)',
+                    marginTop: '-60px',
+                    marginBottom: '-80px'
+                  }}
+                />
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-blue-700 to-transparent p-4">
+                  <div className="text-white font-semibold text-sm">Notes</div>
+                  <div className="text-white/80 text-xs">Concise study material</div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        
+        {/* Decorative elements */}
+        <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-gradient-to-br from-teal-400 to-teal-500 rounded-full opacity-20 blur-xl"></div>
+        <div className="absolute -top-8 -right-8 w-20 h-20 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full opacity-20 blur-xl"></div>
       </div>
     </section>
   );
