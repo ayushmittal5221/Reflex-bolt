@@ -97,32 +97,26 @@ export const FEATURES: Feature[] = [
 export const TESTIMONIALS: Testimonial[] = [
   {
     id: 1,
-    name: 'Avantika Badhana',
-    text: 'Really thankful… now we don\'t need to buy expensive subscriptions.',
+    name: 'Dr. Adrija Ghosh – Rank 53 in INI CET 2025',
+    text: 'Reflex helped me get topic-wise closure. Synapse is amazing. Grateful for Aditya Sir and the team\'s consistent effort.',
     image: 'https://images.pexels.com/photos/5327585/pexels-photo-5327585.jpeg?auto=compress&cs=tinysrgb&w=200',
   },
   {
     id: 2,
-    name: 'Promod Kumar',
-    text: 'Reflex is the perfect start for NEET PG.',
+    name: 'Dr. Aritra Panda – Rank 79 in INI CET 2025',
+    text: 'Reflex is one of the best PYQ apps. It helped me immensely in INI CET exam preparation and performance.',
     image: 'https://images.pexels.com/photos/5407206/pexels-photo-5407206.jpeg?auto=compress&cs=tinysrgb&w=200',
   },
   {
     id: 3,
-    name: 'Sania Satkhed',
-    text: 'Worth every rupee if even 30 of these questions show up!',
+    name: 'Dr. Preeyan Agarwalla – Rank 174 in INI CET 2025',
+    text: 'Reflex is my go-to app for PYQs. Well-organized, includes topper notes, progress tracking, and quiz-based free subscriptions.',
     image: 'https://images.pexels.com/photos/5214956/pexels-photo-5214956.jpeg?auto=compress&cs=tinysrgb&w=200',
   },
   {
     id: 4,
-    name: 'Tanmay Gautam',
-    text: 'I switched to Reflex when my other app expired—game changer.',
-    image: 'https://images.pexels.com/photos/5490276/pexels-photo-5490276.jpeg?auto=compress&cs=tinysrgb&w=200',
-  },
-  {
-    id: 5,
-    name: 'Dr. Soumya Viswanath Nair',
-    text: 'Affordable and focused. Reflex rescued my prep.',
+    name: 'Dr. Meghna Johny – Rank 957 in INI CET 2025',
+    text: 'Reflex gave me reliable, concise explanations of PYQs. It made revision simple and quick. Extremely useful for INI CET prep.',
     image: 'https://images.pexels.com/photos/5452201/pexels-photo-5452201.jpeg?auto=compress&cs=tinysrgb&w=200',
   },
 ];
