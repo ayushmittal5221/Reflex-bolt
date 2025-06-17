@@ -5,6 +5,7 @@ export const APP_LINKS = {
   GOOGLE_PLAY: 'https://play.google.com/store/apps/details?id=com.gooded.pgpyqs&hl=en_IN',
   APP_STORE: 'https://apps.apple.com/in/app/reflex-neet-pg-preparation/id6449163339',
   WEB_APP: 'https://app.reflexprep.com/',
+  WHATSAPP: 'https://api.whatsapp.com/send/?phone=917835083689&text=Hello%2C+I+need+assistance%21&type=phone_number&app_absent=0',
 };
 
 export const PLANS: Plan[] = [
@@ -109,7 +110,7 @@ export const TESTIMONIALS: Testimonial[] = [
   },
   {
     id: 3,
-    name: 'Dr. Preeyan Agarwalla – Rank 174 in INI CET 2025',
+    name: 'Dr. Preeyam Agarwalla – Rank 174 in INI CET 2025',
     text: 'Reflex is my go-to app for PYQs. Well-organized, includes topper notes, progress tracking, and quiz-based free subscriptions.',
     image: 'https://images.pexels.com/photos/5214956/pexels-photo-5214956.jpeg?auto=compress&cs=tinysrgb&w=200',
   },
@@ -154,6 +155,12 @@ export const SOCIAL_LINKS: SocialLink[] = [
     name: 'Twitter',
     url: 'https://twitter.com',
     icon: 'Twitter',
+  },
+  {
+    id: 3,
+    name: 'WhatsApp',
+    url: 'https://api.whatsapp.com/send/?phone=917835083689&text=Hello%2C+I+need+assistance%21&type=phone_number&app_absent=0',
+    icon: 'MessageCircle',
   },
 ];
 

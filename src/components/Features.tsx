@@ -105,9 +105,14 @@ const Features: React.FC = () => {
                     </div>
                   </div>
                   
-                  <button className="mt-4 w-full bg-teal-500 text-white py-2 rounded-lg font-medium">
+                  <a
+                    href="https://app.reflexprep.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-4 w-full bg-teal-500 text-white py-2 rounded-lg font-medium block text-center hover:bg-teal-600 transition-colors"
+                  >
                     Start Practicing
-                  </button>
+                  </a>
                 </div>
                 
                 {/* Decorative elements */}

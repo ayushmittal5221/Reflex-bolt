@@ -22,7 +22,9 @@ const Hero: React.FC = () => {
             
             <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
               <a 
-                href={APP_LINKS.WEB_APP} 
+                href="https://app.reflexprep.com/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-white text-blue-700 hover:bg-gray-100 transition-colors px-6 py-3 rounded-lg font-semibold flex items-center justify-center w-full sm:w-auto"
               >
                 <ExternalLink size={20} className="mr-2" />

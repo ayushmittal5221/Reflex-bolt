@@ -1,8 +1,22 @@
 import React from 'react';
-import { Download, Facebook, Mail, Phone, Twitter } from 'lucide-react';
-import { APP_LINKS, LEGAL_LINKS } from '../utils/constants';
+import { Download, Facebook, Mail, MessageCircle, Phone, Twitter } from 'lucide-react';
+import { APP_LINKS, LEGAL_LINKS, SOCIAL_LINKS } from '../utils/constants';
 
 const Footer: React.FC = () => {
+  // Function to render the appropriate social icon
+  const renderSocialIcon = (iconName: string) => {
+    switch (iconName) {
+      case 'Facebook':
+        return <Facebook size={16} />;
+      case 'Twitter':
+        return <Twitter size={16} />;
+      case 'MessageCircle':
+        return <MessageCircle size={16} />;
+      default:
+        return <Facebook size={16} />;
+    }
+  };
+
   return (
     <footer className="bg-gray-900 text-white pt-16 pb-8">
       <div className="container mx-auto px-4">
@@ -23,8 +37,13 @@ const Footer: React.FC = () => {
               India's premier NEET PG preparation platform with a focus on high-yield previous year questions and concise notes.
             </p>
             <div className="flex space-x-3">
-              <SocialButton icon={<Facebook size={16} />} href="https://facebook.com" />
-              <SocialButton icon={<Twitter size={16} />} href="https://twitter.com" />
+              {SOCIAL_LINKS.map((social) => (
+                <SocialButton 
+                  key={social.id}
+                  icon={renderSocialIcon(social.icon)} 
+                  href={social.url} 
+                />
+              ))}
             </div>
           </div>
           
@@ -43,7 +62,14 @@ const Footer: React.FC = () => {
                   <Phone size={16} className="text-teal-400" />
                 </div>
                 <div>
-                  <div>+91-8527521718</div>
+                  <a 
+                    href={APP_LINKS.WHATSAPP}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-teal-400 transition-colors"
+                  >
+                    +91-7835083689
+                  </a>
                   <div className="text-xs mt-1">10 AM–8 PM, All Days</div>
                 </div>
               </div>
