@@ -20,7 +20,7 @@ const Hero: React.FC = () => {
               Unlock your dream medical specialization with Reflex Prep's unmatched question bank! Learn smarter, not harder with concise notes and 10,000+ PYQs.
             </p>
             
-            <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4 mb-8">
+            <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4 mb-6">
               <a 
                 href="https://app.reflexprep.com/"
                 target="_blank"
@@ -53,24 +53,24 @@ const Hero: React.FC = () => {
               </div>
             </div>
 
-            {/* Stats boxes */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-lg mx-auto md:mx-0">
-              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-4 text-center">
-                <div className="text-2xl font-bold text-white mb-1">50K+</div>
-                <div className="text-sm text-white/80">Downloads</div>
+            {/* Stats boxes - Reduced size */}
+            <div className="grid grid-cols-3 gap-3 max-w-md mx-auto md:mx-0">
+              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-3 text-center">
+                <div className="text-lg font-bold text-white mb-0.5">50K+</div>
+                <div className="text-xs text-white/80">Downloads</div>
               </div>
               
-              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-4 text-center">
-                <div className="flex items-center justify-center mb-1">
-                  <span className="text-2xl font-bold text-white mr-1">4.5</span>
-                  <Star size={20} className="text-yellow-400 fill-current" />
+              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-3 text-center">
+                <div className="flex items-center justify-center mb-0.5">
+                  <span className="text-lg font-bold text-white mr-1">4.5</span>
+                  <Star size={16} className="text-yellow-400 fill-current" />
                 </div>
-                <div className="text-sm text-white/80">Rating</div>
+                <div className="text-xs text-white/80">Rating</div>
               </div>
               
-              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-4 text-center">
-                <div className="text-2xl font-bold text-white mb-1">2K+</div>
-                <div className="text-sm text-white/80">Reviews</div>
+              <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-3 text-center">
+                <div className="text-lg font-bold text-white mb-0.5">2K+</div>
+                <div className="text-xs text-white/80">Reviews</div>
               </div>
             </div>
           </div>
