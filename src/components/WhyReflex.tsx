@@ -66,7 +66,7 @@ const WhyReflex: React.FC = () => {
             </div>
             
             <div className="bg-gradient-to-br from-blue-700 to-teal-700 rounded-xl p-8 text-white shadow-lg transform transition-transform duration-300 hover:-translate-y-1">
-              <div className="text-4xl md:text-5xl font-bold mb-2">70%</div>
+              <div className="text-4xl md:text-5xl font-bold mb-2">125+</div>
               <div className="text-xl font-medium">Repeated Questions</div>
               <p className="mt-2 text-blue-100">In NEET PG exams</p>
             </div>

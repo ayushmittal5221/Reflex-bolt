@@ -100,19 +100,19 @@ export const TESTIMONIALS: Testimonial[] = [
     id: 1,
     name: 'Dr. Adrija Ghosh – Rank 53 in INI CET 2025',
     text: 'Reflex helped me get topic-wise closure. Synapse is amazing. Grateful for Aditya Sir and the team\'s consistent effort.',
-    image: 'https://images.pexels.com/photos/5327585/pexels-photo-5327585.jpeg?auto=compress&cs=tinysrgb&w=200',
+    image: 'https://reflex-banners.s3.ap-south-1.amazonaws.com/1000157918.jpg',
   },
   {
     id: 2,
     name: 'Dr. Aritra Panda – Rank 79 in INI CET 2025',
     text: 'Reflex is one of the best PYQ apps. It helped me immensely in INI CET exam preparation and performance.',
-    image: 'https://images.pexels.com/photos/5407206/pexels-photo-5407206.jpeg?auto=compress&cs=tinysrgb&w=200',
+    image: 'https://reflex-banners.s3.ap-south-1.amazonaws.com/503199487_17896134600235767_7289522847615351532_n.+%281%29.jpg',
   },
   {
     id: 3,
     name: 'Dr. Preeyam Agarwalla – Rank 174 in INI CET 2025',
     text: 'Reflex is my go-to app for PYQs. Well-organized, includes topper notes, progress tracking, and quiz-based free subscriptions.',
-    image: 'https://images.pexels.com/photos/5214956/pexels-photo-5214956.jpeg?auto=compress&cs=tinysrgb&w=200',
+    image: 'https://reflex-banners.s3.ap-south-1.amazonaws.com/502985992_17896024059235767_7991644330758119107_n..jpg',
   },
   {
     id: 4,
