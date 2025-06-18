@@ -33,8 +33,8 @@ function App() {
     <div className="font-['Inter',sans-serif] text-gray-800">
       <Header />
       <Hero />
-      <Plans />
       <Features />
+      <Plans />
       <Testimonials />
       <WhyReflex />
       <CTA />
