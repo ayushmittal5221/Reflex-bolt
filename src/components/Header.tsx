@@ -25,14 +25,14 @@ const Header: React.FC = () => {
           <div className="w-8 h-8 flex items-center justify-center">
             <img 
               src="/image.png" 
-              alt="Reflex Prep Logo" 
+              alt="Reflex Logo" 
               className="w-full h-full object-contain"
             />
           </div>
           <span className={`font-bold text-xl transition-colors duration-300 ${
             isScrolled ? 'text-gray-800' : 'text-white'
           }`}>
-            Reflex Prep
+            Reflex
           </span>
         </a>
         

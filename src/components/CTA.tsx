@@ -11,7 +11,7 @@ const CTA: React.FC = () => {
             Could You Be Our Next NEET PG Champion?
           </h2>
           <p className="text-lg text-gray-600 mb-8">
-            Join thousands of medical students who have transformed their NEET PG preparation with Reflex Prep
+            Join thousands of medical students who have transformed their NEET PG preparation with Reflex
           </p>
           
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-3xl mx-auto">

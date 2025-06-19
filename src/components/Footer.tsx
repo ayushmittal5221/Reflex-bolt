@@ -1,19 +1,19 @@
 import React from 'react';
-import { Download, Facebook, Mail, MessageCircle, Phone, Twitter } from 'lucide-react';
+import { Download, Instagram, Mail, MessageCircle, Phone, Youtube } from 'lucide-react';
 import { APP_LINKS, LEGAL_LINKS, SOCIAL_LINKS } from '../utils/constants';
 
 const Footer: React.FC = () => {
   // Function to render the appropriate social icon
   const renderSocialIcon = (iconName: string) => {
     switch (iconName) {
-      case 'Facebook':
-        return <Facebook size={16} />;
-      case 'Twitter':
-        return <Twitter size={16} />;
+      case 'Youtube':
+        return <Youtube size={16} />;
+      case 'Instagram':
+        return <Instagram size={16} />;
       case 'MessageCircle':
         return <MessageCircle size={16} />;
       default:
-        return <Facebook size={16} />;
+        return <Youtube size={16} />;
     }
   };
 
@@ -27,11 +27,11 @@ const Footer: React.FC = () => {
               <div className="w-6 h-6 flex items-center justify-center mr-2">
                 <img 
                   src="/image.png" 
-                  alt="Reflex Prep Logo" 
+                  alt="Reflex Logo" 
                   className="w-full h-full object-contain"
                 />
               </div>
-              <span className="font-bold text-lg">Reflex Prep</span>
+              <span className="font-bold text-lg">Reflex</span>
             </div>
             <p className="text-gray-400 mb-4">
               India's premier NEET PG preparation platform with a focus on high-yield previous year questions and concise notes.
@@ -133,7 +133,7 @@ const Footer: React.FC = () => {
         {/* Bottom section */}
         <div className="pt-8 flex flex-col md:flex-row justify-between items-center">
           <div className="text-gray-500 text-sm mb-4 md:mb-0">
-            &copy; {new Date().getFullYear()} Reflexprep. All rights reserved.
+            &copy; {new Date().getFullYear()} Reflex. All rights reserved.
           </div>
           
           <div className="flex flex-wrap justify-center gap-x-6 gap-y-2">

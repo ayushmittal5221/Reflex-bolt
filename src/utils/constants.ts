@@ -146,15 +146,15 @@ export const WHY_REFLEX: Feature[] = [
 export const SOCIAL_LINKS: SocialLink[] = [
   {
     id: 1,
-    name: 'Facebook',
-    url: 'https://facebook.com',
-    icon: 'Facebook',
+    name: 'YouTube',
+    url: 'http://www.youtube.com/@Reflex__PG',
+    icon: 'Youtube',
   },
   {
     id: 2,
-    name: 'Twitter',
-    url: 'https://twitter.com',
-    icon: 'Twitter',
+    name: 'Instagram',
+    url: 'https://www.instagram.com/reflex__pg/?hl=en',
+    icon: 'Instagram',
   },
   {
     id: 3,
