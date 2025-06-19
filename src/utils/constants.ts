@@ -1,5 +1,5 @@
 import { Feature, Plan, SocialLink, Testimonial } from '../types';
-import { BookText, Brain, BarChartIcon as ChartMixedIcon, Laptop, Layout, LineChart, Monitor, Smartphone, TestTube, TestTubes, Trophy, Zap } from 'lucide-react';
+import { BookText, Brain, BarChartIcon as ChartMixedIcon, Laptop, Layout, LineChart, Monitor, Smartphone, TestTube, TestTubes, Trophy, Zap, FileText } from 'lucide-react';
 
 export const APP_LINKS = {
   GOOGLE_PLAY: 'https://play.google.com/store/apps/details?id=com.gooded.pgpyqs&hl=en_IN',
@@ -92,6 +92,12 @@ export const FEATURES: Feature[] = [
     title: 'Access Concise & Focused Notes',
     description: 'Expert handwritten notes with clear visuals and clinical insights.',
     icon: 'BookText',
+  },
+  {
+    id: 4,
+    title: 'Test Series',
+    description: 'Experience full-length Grand Test Series designed to simulate the real INICET and NEET PG exams.',
+    icon: 'FileText',
   },
 ];
 

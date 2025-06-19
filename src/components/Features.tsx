@@ -1,5 +1,5 @@
 import React from 'react';
-import { BookText, Layout, TestTubes } from 'lucide-react';
+import { BookText, Layout, TestTubes, FileText } from 'lucide-react';
 import { FEATURES } from '../utils/constants';
 
 const Features: React.FC = () => {
@@ -12,6 +12,8 @@ const Features: React.FC = () => {
         return <Layout size={40} className="text-teal-500" />;
       case 'BookText':
         return <BookText size={40} className="text-teal-500" />;
+      case 'FileText':
+        return <FileText size={40} className="text-teal-500" />;
       default:
         return <TestTubes size={40} className="text-teal-500" />;
     }
@@ -29,7 +31,7 @@ const Features: React.FC = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
           {FEATURES.map((feature) => (
             <div 
               key={feature.id}
@@ -58,7 +60,7 @@ const Features: React.FC = () => {
                 Why PYQs Are Game-Changers
               </h3>
               <p className="text-gray-700 mb-6 text-lg">
-                Over 70% of NEET PG questions often repeat. Reflex Prep includes 10,000+ PYQs from NEET PG & INICET — curated to help you ace the exam.
+                Over 70% of NEET PG questions often repeat. Reflex includes 10,000+ PYQs from NEET PG & INICET — curated to help you ace the exam.
               </p>
               <ul className="space-y-3">
                 <Feature icon="📊" text="Organized by subjects and topics" />
