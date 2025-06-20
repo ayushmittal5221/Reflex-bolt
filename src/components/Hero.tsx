@@ -10,34 +10,9 @@ const Hero: React.FC = () => {
         <div className="absolute top-0 left-0 w-full h-full bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iLjUiPjxwYXRoIGQ9Ik0zNiAxOGMwLTkuOTQtOC4wNi0xOC0xOC0xOFYwYzkuOTQgMCAxOCA4LjA2IDE4IDE4aC0yeiIvPjwvZz48L2c+PC9zdmc+')]"></div>
       </div>
       
-      {/* Review Images - Positioned in empty space */}
-      <div className="absolute left-4 top-1/2 -translate-y-1/2 hidden lg:block z-20">
-        {/* First Review Image */}
-        <div className="relative mb-8">
-          <div className="bg-white/10 backdrop-blur-sm p-2 rounded-2xl shadow-2xl transform -rotate-12 hover:rotate-0 transition-transform duration-500">
-            <img 
-              src="/review1.jpg" 
-              alt="User Review 1" 
-              className="w-48 h-auto rounded-xl shadow-lg"
-            />
-          </div>
-        </div>
-        
-        {/* Second Review Image */}
-        <div className="relative ml-8">
-          <div className="bg-white/10 backdrop-blur-sm p-2 rounded-2xl shadow-2xl transform rotate-12 hover:rotate-0 transition-transform duration-500">
-            <img 
-              src="/review2.jpg" 
-              alt="User Review 2" 
-              className="w-48 h-auto rounded-xl shadow-lg"
-            />
-          </div>
-        </div>
-      </div>
-      
       <div className="container mx-auto px-4 relative z-10">
         <div className="flex flex-col md:flex-row items-center">
-          <div className="w-full md:w-1/2 text-center md:text-left text-white mb-10 md:mb-0 lg:ml-16">
+          <div className="w-full md:w-1/2 text-center md:text-left text-white mb-10 md:mb-0">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4">
               Master NEET PG with High-Yield Previous Year Questions
             </h1>
@@ -100,7 +75,33 @@ const Hero: React.FC = () => {
             </div>
           </div>
           
-          <div className="w-full md:w-1/2 flex justify-center md:justify-end">
+          <div className="w-full md:w-1/2 flex justify-center md:justify-end relative">
+            {/* Review Images - Positioned beside the phone mockup */}
+            <div className="hidden lg:flex flex-col space-y-6 mr-8 mt-8">
+              {/* First Review Image */}
+              <div className="transform -rotate-12 hover:rotate-0 transition-transform duration-500">
+                <div className="bg-white/10 backdrop-blur-sm p-2 rounded-2xl shadow-2xl">
+                  <img 
+                    src="/review1.jpg" 
+                    alt="User Review 1" 
+                    className="w-40 h-auto rounded-xl shadow-lg"
+                  />
+                </div>
+              </div>
+              
+              {/* Second Review Image */}
+              <div className="transform rotate-12 hover:rotate-0 transition-transform duration-500 ml-4">
+                <div className="bg-white/10 backdrop-blur-sm p-2 rounded-2xl shadow-2xl">
+                  <img 
+                    src="/review2.jpg" 
+                    alt="User Review 2" 
+                    className="w-40 h-auto rounded-xl shadow-lg"
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Phone mockup */}
             <div className="relative max-w-sm">
               {/* Phone mockup with app screenshot */}
               <div className="bg-gray-900 rounded-3xl p-2 shadow-2xl rotate-3 transform transition-transform hover:rotate-0 duration-500">
