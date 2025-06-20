@@ -77,14 +77,14 @@ const Hero: React.FC = () => {
           
           <div className="w-full md:w-1/2 flex justify-center md:justify-end relative">
             {/* Review Images - Positioned beside the phone mockup */}
-            <div className="hidden lg:flex flex-col space-y-6 mr-8 mt-8">
+            <div className="hidden lg:flex flex-col space-y-8 mr-20 mt-8">
               {/* First Review Image */}
               <div className="transform -rotate-12 hover:rotate-0 transition-transform duration-500">
                 <div className="bg-white/10 backdrop-blur-sm p-2 rounded-2xl shadow-2xl">
                   <img 
-                    src="/review1.jpg" 
+                    src="https://reflex-banners.s3.ap-south-1.amazonaws.com/image+%281%29.png" 
                     alt="User Review 1" 
-                    className="w-40 h-auto rounded-xl shadow-lg"
+                    className="w-80 h-auto rounded-xl shadow-lg"
                   />
                 </div>
               </div>
@@ -93,9 +93,9 @@ const Hero: React.FC = () => {
               <div className="transform rotate-12 hover:rotate-0 transition-transform duration-500 ml-4">
                 <div className="bg-white/10 backdrop-blur-sm p-2 rounded-2xl shadow-2xl">
                   <img 
-                    src="/review2.jpg" 
+                    src="https://reflex-banners.s3.ap-south-1.amazonaws.com/image.png" 
                     alt="User Review 2" 
-                    className="w-40 h-auto rounded-xl shadow-lg"
+                    className="w-80 h-auto rounded-xl shadow-lg"
                   />
                 </div>
               </div>
