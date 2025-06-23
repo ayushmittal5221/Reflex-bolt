@@ -141,14 +141,15 @@ const Hero: React.FC = () => {
       
       {/* Wave shape divider */}
     <div className="absolute bottom-0 left-0 right-0">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className="w-full h-auto">
-    <path 
-      fill="#ffffff" 
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 150" className="w-full h-auto">
+    <path
+      fill="#ffffff"
       fillOpacity="1"
-      d="M0,224L48,213.3C96,203,192,181,288,176C384,171,480,181,576,192C672,203,768,213,864,202.7C960,192,1056,160,1152,133.3C1248,107,1344,85,1392,74.7L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+      d="M0,96L48,85.3C96,75,192,53,288,53.3C384,53,480,75,576,90.7C672,107,768,117,864,112C960,107,1056,85,1152,74.7C1248,64,1344,64,1392,64L1440,64L1440,150L0,150Z"
     />
   </svg>
 </div>
+
     </section>
   );
 };
