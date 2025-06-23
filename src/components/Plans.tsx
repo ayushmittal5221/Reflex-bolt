@@ -15,7 +15,7 @@ const Plans: React.FC = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 max-w-8xl mx-auto">
           {PLANS.map((plan) => (
             <div 
               key={plan.id}
@@ -44,7 +44,7 @@ const Plans: React.FC = () => {
                   {plan.features.map((feature, index) => (
                     <li key={index} className="flex items-start">
                       <CheckCircle2 size={18} className="text-teal-500 mr-2 mt-0.5 flex-shrink-0" />
-                      <span className="text-gray-700">{feature}</span>
+                      <span className="text-gray-700 text-sm leading-relaxed">{feature}</span>
                     </li>
                   ))}
                 </ul>

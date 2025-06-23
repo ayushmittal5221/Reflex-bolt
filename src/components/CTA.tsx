@@ -14,7 +14,7 @@ const CTA: React.FC = () => {
             Join thousands of medical students who have transformed their NEET PG preparation with Reflex
           </p>
           
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-3xl mx-auto">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 max-w-4xl mx-auto">
             {PLANS.map((plan) => (
               <a
                 key={plan.id}
@@ -24,7 +24,7 @@ const CTA: React.FC = () => {
                 className={`
                   flex items-center justify-center px-4 py-3 rounded-lg font-medium text-center
                   ${plan.id === 2 
-                    ? 'bg-teal-500 hover:bg-teal-600 text-white col-span-2 sm:col-span-1' 
+                    ? 'bg-teal-500 hover:bg-teal-600 text-white' 
                     : 'bg-white hover:bg-gray-100 text-gray-800 border border-gray-300'
                   }
                   transition-colors duration-300

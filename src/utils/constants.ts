@@ -72,6 +72,24 @@ export const PLANS: Plan[] = [
     buttonText: 'Buy for 36 months',
     link: 'https://www.neetprep.com/PayNow?courseOfferId=12277243&app=reflex&courseId=2135',
   },
+  {
+    id: 5,
+    title: '48 Months Plan',
+    duration: 48,
+    price: 2999,
+    features: [
+      '1st & 2nd Year? Perfect Time to Build Your Success Story.',
+      'Access to 10,000+ PYQs',
+      'Complete handwritten notes',
+      'Custom test creation',
+      'Mobile & web access',
+      'Performance analytics',
+      'Priority support',
+      'Lifetime updates',
+    ],
+    buttonText: 'Buy for 48 months',
+    link: 'https://www.neetprep.com/PayNow?courseOfferId=48month&app=reflex&courseId=2135',
+  },
 ];
 
 export const FEATURES: Feature[] = [

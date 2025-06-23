@@ -55,7 +55,12 @@ const Footer: React.FC = () => {
                 <div className="mr-3 mt-1">
                   <Mail size={16} className="text-teal-400" />
                 </div>
-                <span>supportpg@neetprep.com</span>
+                <a 
+                  href="mailto:supportpg@neetprep.com"
+                  className="hover:text-teal-400 transition-colors"
+                >
+                  supportpg@neetprep.com
+                </a>
               </div>
               <div className="flex items-start">
                 <div className="mr-3 mt-1">
