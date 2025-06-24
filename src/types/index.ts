@@ -7,6 +7,7 @@ export interface Plan {
   buttonText: string;
   link: string;
   popular?: boolean;
+  dealOfDay?: boolean;
 }
 
 export interface Testimonial {

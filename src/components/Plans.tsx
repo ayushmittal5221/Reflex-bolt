@@ -22,6 +22,8 @@ const Plans: React.FC = () => {
               className={`rounded-xl overflow-hidden transition-transform duration-300 hover:-translate-y-2 ${
                 plan.popular 
                   ? 'border-2 border-teal-500 relative shadow-xl' 
+                  : plan.dealOfDay
+                  ? 'border-2 border-blue-500 relative shadow-xl'
                   : 'border border-gray-200 shadow-lg'
               }`}
             >
@@ -33,7 +35,21 @@ const Plans: React.FC = () => {
                 </div>
               )}
               
-              <div className={`p-6 ${plan.popular ? 'bg-teal-50' : 'bg-white'}`}>
+              {plan.dealOfDay && (
+                <div className="absolute top-0 right-0">
+                  <div className="bg-blue-500 text-white text-xs font-semibold px-3 py-1 rounded-bl-lg">
+                    DEAL OF THE DAY
+                  </div>
+                </div>
+              )}
+              
+              <div className={`p-6 ${
+                plan.popular 
+                  ? 'bg-teal-50' 
+                  : plan.dealOfDay 
+                  ? 'bg-blue-50' 
+                  : 'bg-white'
+              }`}>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">{plan.title}</h3>
                 <div className="mb-4">
                   <span className="text-3xl font-bold text-gray-900">₹{plan.price}</span>
@@ -43,7 +59,13 @@ const Plans: React.FC = () => {
                 <ul className="space-y-3 mb-6">
                   {plan.features.map((feature, index) => (
                     <li key={index} className="flex items-start">
-                      <CheckCircle2 size={18} className="text-teal-500 mr-2 mt-0.5 flex-shrink-0" />
+                      <CheckCircle2 size={18} className={`mr-2 mt-0.5 flex-shrink-0 ${
+                        plan.popular 
+                          ? 'text-teal-500' 
+                          : plan.dealOfDay 
+                          ? 'text-blue-500' 
+                          : 'text-teal-500'
+                      }`} />
                       <span className="text-gray-700 text-sm leading-relaxed">{feature}</span>
                     </li>
                   ))}
@@ -56,6 +78,8 @@ const Plans: React.FC = () => {
                   className={`block w-full text-center py-3 px-6 rounded-lg font-semibold transition-colors ${
                     plan.popular
                       ? 'bg-teal-500 hover:bg-teal-600 text-white'
+                      : plan.dealOfDay
+                      ? 'bg-blue-500 hover:bg-blue-600 text-white'
                       : 'bg-white hover:bg-gray-100 text-gray-800 border border-gray-300'
                   }`}
                 >
