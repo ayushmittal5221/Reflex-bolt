@@ -13,7 +13,7 @@ const Testimonials: React.FC = () => {
 
     const interval = setInterval(() => {
       handleNext();
-    }, 4000); // Change slide every 4 seconds
+    }, 3000); // Changed from 4000 to 3000 (3 seconds)
 
     return () => clearInterval(interval);
   }, [activeIndex, isAutoPlaying]);
@@ -161,7 +161,7 @@ const Testimonials: React.FC = () => {
                     <div 
                       className="absolute top-0 left-0 h-full bg-teal-200 rounded-full animate-pulse"
                       style={{
-                        animation: 'progress 4s linear infinite'
+                        animation: 'progress 3s linear infinite'
                       }}
                     />
                   )}
