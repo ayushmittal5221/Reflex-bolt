@@ -38,7 +38,7 @@ const Plans: React.FC = () => {
               {plan.dealOfDay && (
                 <div className="absolute top-0 right-0">
                   <div className="bg-blue-500 text-white text-xs font-semibold px-3 py-1 rounded-bl-lg">
-                    DEAL OF THE DAY
+                    BEST DEAL
                   </div>
                 </div>
               )}
