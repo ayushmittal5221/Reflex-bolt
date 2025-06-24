@@ -13,7 +13,7 @@ const Testimonials: React.FC = () => {
 
     const interval = setInterval(() => {
       handleNext();
-    }, 3000); // Changed from 4000 to 3000 (3 seconds)
+    }, 3000); // Change slide every 3 seconds
 
     return () => clearInterval(interval);
   }, [activeIndex, isAutoPlaying]);
@@ -90,6 +90,11 @@ const Testimonials: React.FC = () => {
                             src={testimonial.image} 
                             alt={testimonial.name}
                             className="w-20 h-20 md:w-24 md:h-24 rounded-full object-cover border-3 border-teal-300 shadow-lg"
+                            loading="lazy"
+                            onError={(e) => {
+                              const target = e.target as HTMLImageElement;
+                              target.src = 'https://images.pexels.com/photos/5452201/pexels-photo-5452201.jpeg?auto=compress&cs=tinysrgb&w=200';
+                            }}
                           />
                           <div className="absolute -top-2 -right-2 bg-teal-400 rounded-full p-1">
                             <Quote size={16} className="text-white" />
@@ -138,36 +143,26 @@ const Testimonials: React.FC = () => {
             <ChevronRight size={24} className="group-hover:scale-110 transition-transform" />
           </button>
           
-          {/* Progress bar */}
-          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-white/20 rounded-full p-1 backdrop-blur-sm">
-            <div className="flex space-x-1">
-              {TESTIMONIALS.map((_, index) => (
-                <div
-                  key={index}
-                  className="relative overflow-hidden rounded-full"
-                >
-                  <button
-                    onClick={() => handleDotClick(index)}
-                    disabled={isTransitioning}
-                    className={`block w-12 h-2 rounded-full transition-all duration-300 ${
-                      index === activeIndex 
-                        ? 'bg-teal-400' 
-                        : 'bg-white/40 hover:bg-white/60'
-                    }`}
-                    aria-label={`Go to testimonial ${index + 1}`}
-                  />
-                  {/* Auto-play progress indicator */}
-                  {index === activeIndex && isAutoPlaying && (
-                    <div 
-                      className="absolute top-0 left-0 h-full bg-teal-200 rounded-full animate-pulse"
-                      style={{
-                        animation: 'progress 3s linear infinite'
-                      }}
-                    />
-                  )}
-                </div>
-              ))}
-            </div>
+          {/* Circular dots indicator */}
+          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2">
+            {TESTIMONIALS.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => handleDotClick(index)}
+                disabled={isTransitioning}
+                className={`relative w-3 h-3 rounded-full transition-all duration-300 ${
+                  index === activeIndex 
+                    ? 'bg-teal-400 scale-125' 
+                    : 'bg-white/40 hover:bg-white/60'
+                }`}
+                aria-label={`Go to testimonial ${index + 1}`}
+              >
+                {/* Active dot with animated ring */}
+                {index === activeIndex && (
+                  <div className="absolute inset-0 rounded-full border-2 border-teal-300 animate-ping opacity-75"></div>
+                )}
+              </button>
+            ))}
           </div>
         </div>
         
@@ -182,13 +177,6 @@ const Testimonials: React.FC = () => {
           </button>
         </div>
       </div>
-      
-      <style jsx>{`
-        @keyframes progress {
-          from { width: 0%; }
-          to { width: 100%; }
-        }
-      `}</style>
     </section>
   );
 };
