@@ -143,7 +143,7 @@ export const TESTIMONIALS: Testimonial[] = [
     id: 4,
     name: 'Dr. Meghna Johny – Rank 957 in INI CET 2025',
     text: 'Reflex gave me reliable, concise explanations of PYQs. It made revision simple and quick. Extremely useful for INI CET prep.',
-    image: 'https://images.pexels.com/photos/5452201/pexels-photo-5452201.jpeg?auto=compress&cs=tinysrgb&w=200',
+    image: 'https://reflex-banners.s3.ap-south-1.amazonaws.com/1000159763.jpg',
   },
 ];
 
