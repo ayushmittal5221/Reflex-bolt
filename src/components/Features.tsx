@@ -125,6 +125,7 @@ const Features: React.FC = () => {
         </div>
          </div>
     </section>
+    );
 
 
 const Feature: React.FC<FeatureProps> = ({ icon, text }) => (
