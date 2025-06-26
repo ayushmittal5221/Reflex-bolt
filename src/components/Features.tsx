@@ -123,10 +123,47 @@ const Features: React.FC = () => {
             </div>
           </div>
         </div>
-         </div>
+         
+{/* Interactive CTA Section - Positioned after PYQ section */}
+        <div className="mt-16 bg-gradient-to-r from-blue-50 to-teal-50 rounded-2xl p-8 text-center">
+          <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+            Ready to Test Your Knowledge?
+          </h3>
+          <p className="text-gray-700 mb-8 text-lg max-w-2xl mx-auto">
+            Challenge yourself with our specialized quiz formats and free grand tests designed to boost your confidence.
+          </p>
+          
+          <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+            <a 
+              href="https://app.reflexprep.com/hammer-quiz"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gradient-to-r from-teal-400 to-green-500 hover:from-teal-500 hover:to-green-600 text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+            >
+              🔨 Hammer Quiz
+              <div className="text-sm opacity-90 mt-1">Quick & Focused Practice</div>
+            </a>
+            
+            <a 
+              href="https://app.reflexprep.com/free-grand-test"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl border border-white/20"
+            >
+              📝 Attempt Free GT
+              <div className="text-sm opacity-90 mt-1">Full-Length Mock Exam</div>
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
-    );
+  );
+};
 
+interface FeatureProps {
+  icon: string;
+  text: string;
+}
 
 const Feature: React.FC<FeatureProps> = ({ icon, text }) => (
   <li className="flex items-start">
