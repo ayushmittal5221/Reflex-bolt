@@ -125,7 +125,7 @@ const Features: React.FC = () => {
         </div>
          
 {/* Interactive CTA Section - Positioned after PYQ section */}
-        <div className="mt-16 bg-gradient-to-r from-blue-50 to-teal-50 rounded-2xl p-8 text-center">
+{/*         <div className="mt-16 bg-gradient-to-r from-blue-50 to-teal-50 rounded-2xl p-8 text-center">
           <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
             Ready to Test Your Knowledge?
           </h3>
@@ -154,7 +154,7 @@ const Features: React.FC = () => {
               <div className="text-sm opacity-90 mt-1">Full-Length Mock Exam</div>
             </a>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
