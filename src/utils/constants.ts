@@ -88,7 +88,7 @@ export const PLANS: Plan[] = [
       'Lifetime updates',
     ],
     buttonText: 'Buy for 48 months',
-    link: 'https://www.neetprep.com/PayNow?courseOfferId=48month&app=reflex&courseId=2135',
+    link: 'https://www.neetprep.com/PayNow?courseOfferId=13404515&app=reflex&courseId=2135',
     dealOfDay: true,
   },
 ];
