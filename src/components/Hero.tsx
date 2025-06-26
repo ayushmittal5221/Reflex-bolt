@@ -1,5 +1,5 @@
 import React from 'react';
-import { Download, ExternalLink, Star } from 'lucide-react';
+import { Download, ExternalLink, Star, Hammer, FileText } from 'lucide-react';
 import { APP_LINKS } from '../utils/constants';
 
 const Hero: React.FC = () => {
@@ -51,6 +51,29 @@ const Hero: React.FC = () => {
                   App Store
                 </a>
               </div>
+            </div>
+
+            {/* New CTA Buttons - Hammer Quiz & Free GT */}
+            <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start space-y-3 sm:space-y-0 sm:space-x-4 mb-6">
+              <a 
+                href="https://app.reflexprep.com/hammer-quiz"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gradient-to-r from-teal-500 to-green-500 hover:from-teal-600 hover:to-green-600 text-white px-6 py-3 rounded-lg font-semibold flex items-center justify-center w-full sm:w-auto transition-all duration-300 transform hover:scale-105 shadow-lg"
+              >
+                <Hammer size={20} className="mr-2" />
+                🔨 Hammer Quiz
+              </a>
+              
+              <a 
+                href="https://app.reflexprep.com/free-grand-test"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white px-6 py-3 rounded-lg font-semibold flex items-center justify-center w-full sm:w-auto transition-all duration-300 transform hover:scale-105 shadow-lg border-2 border-white/20"
+              >
+                <FileText size={20} className="mr-2" />
+                📝 Attempt Free GT
+              </a>
             </div>
 
             {/* Stats boxes - Reduced size */}

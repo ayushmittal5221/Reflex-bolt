@@ -1,5 +1,5 @@
 import React from 'react';
-import { BookText, Layout, TestTubes, FileText } from 'lucide-react';
+import { BookText, Layout, TestTubes, FileText, Hammer, Target } from 'lucide-react';
 import { FEATURES } from '../utils/constants';
 
 const Features: React.FC = () => {
@@ -50,6 +50,44 @@ const Features: React.FC = () => {
               </p>
             </div>
           ))}
+        </div>
+
+        {/* Interactive CTA Section */}
+        <div className="mt-16 bg-gradient-to-r from-blue-50 to-teal-50 rounded-2xl p-8 text-center">
+          <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+            Ready to Test Your Knowledge?
+          </h3>
+          <p className="text-gray-700 mb-8 text-lg max-w-2xl mx-auto">
+            Challenge yourself with our specialized quiz formats and free grand tests designed to boost your confidence.
+          </p>
+          
+          <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+            <a 
+              href="https://app.reflexprep.com/hammer-quiz"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group bg-gradient-to-r from-teal-500 to-green-500 hover:from-teal-600 hover:to-green-600 text-white px-8 py-4 rounded-xl font-semibold flex items-center justify-center transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+            >
+              <Hammer size={24} className="mr-3 group-hover:rotate-12 transition-transform duration-300" />
+              <div className="text-left">
+                <div className="text-lg">🔨 Hammer Quiz</div>
+                <div className="text-sm opacity-90">Quick & Focused Practice</div>
+              </div>
+            </a>
+            
+            <a 
+              href="https://app.reflexprep.com/free-grand-test"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white px-8 py-4 rounded-xl font-semibold flex items-center justify-center transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl border-2 border-white/20"
+            >
+              <Target size={24} className="mr-3 group-hover:scale-110 transition-transform duration-300" />
+              <div className="text-left">
+                <div className="text-lg">📝 Free Grand Test</div>
+                <div className="text-sm opacity-90">Full-Length Mock Exam</div>
+              </div>
+            </a>
+          </div>
         </div>
         
         {/* Feature highlight section */}
