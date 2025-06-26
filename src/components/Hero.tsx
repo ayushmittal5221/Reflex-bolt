@@ -59,9 +59,8 @@ const Hero: React.FC = () => {
                 href="https://app.reflexprep.com/hammer-quiz"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-gradient-to-r from-teal-500 to-green-500 hover:from-teal-600 hover:to-green-600 text-white px-6 py-3 rounded-lg font-semibold flex items-center justify-center w-full sm:w-auto transition-all duration-300 transform hover:scale-105 shadow-lg"
+                className="bg-gradient-to-r from-teal-400 to-green-500 hover:from-teal-500 hover:to-green-600 text-white px-6 py-3 rounded-lg font-semibold flex items-center justify-center w-full sm:w-auto transition-all duration-300 shadow-lg hover:shadow-xl"
               >
-                <Hammer size={20} className="mr-2" />
                 🔨 Hammer Quiz
               </a>
               
@@ -69,9 +68,8 @@ const Hero: React.FC = () => {
                 href="https://app.reflexprep.com/free-grand-test"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white px-6 py-3 rounded-lg font-semibold flex items-center justify-center w-full sm:w-auto transition-all duration-300 transform hover:scale-105 shadow-lg border-2 border-white/20"
+                className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-6 py-3 rounded-lg font-semibold flex items-center justify-center w-full sm:w-auto transition-all duration-300 shadow-lg hover:shadow-xl border border-white/20"
               >
-                <FileText size={20} className="mr-2" />
                 📝 Attempt Free GT
               </a>
             </div>
