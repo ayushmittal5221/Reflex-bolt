@@ -123,6 +123,8 @@ const Features: React.FC = () => {
             </div>
           </div>
         </div>
+         </div>
+    </section>
 
 
 const Feature: React.FC<FeatureProps> = ({ icon, text }) => (
