@@ -124,10 +124,6 @@ const Features: React.FC = () => {
           </div>
         </div>
 
-interface FeatureProps {
-  icon: string;
-  text: string;
-}
 
 const Feature: React.FC<FeatureProps> = ({ icon, text }) => (
   <li className="flex items-start">
