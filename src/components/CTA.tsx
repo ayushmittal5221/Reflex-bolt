@@ -39,12 +39,12 @@ const CTA: React.FC = () => {
           {/* Headings */}
           <div className="flex justify-center items-center gap-8 mb-8">
             <div className="text-center w-64">
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Dashboard</h3>
-              <p className="text-sm text-gray-600">Track your progress</p>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Progress Tracker</h3>
+              <p className="text-sm text-gray-600">Monitor your learning journey</p>
             </div>
             <div className="text-center w-72">
-              <h3 className="text-xl font-bold text-gray-900 mb-2">Test Builder</h3>
-              <p className="text-sm text-gray-600">Create custom tests</p>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Custom Test Builder</h3>
+              <p className="text-sm text-gray-600">Create personalized tests</p>
             </div>
             <div className="text-center w-64">
               <h3 className="text-xl font-bold text-gray-900 mb-2">Notes</h3>
@@ -54,13 +54,13 @@ const CTA: React.FC = () => {
           
           {/* App screenshot cards */}
           <div className="flex flex-wrap justify-center items-center gap-8">
-            {/* Dashboard Card */}
+            {/* Progress Tracker Card */}
             <div className="relative group">
               <div className="bg-white p-3 rounded-2xl shadow-2xl rotate-3 transition-transform duration-500 hover:rotate-0">
                 <div className="relative overflow-hidden rounded-xl">
                   <img 
-                    src="/1.jpg" 
-                    alt="Dashboard" 
+                    src="/Progress_Tracker.jpeg" 
+                    alt="Progress Tracker" 
                     className="w-64 h-auto object-cover"
                     style={{ 
                       clipPath: 'inset(60px 0 80px 0)',
@@ -72,13 +72,13 @@ const CTA: React.FC = () => {
               </div>
             </div>
             
-            {/* Test Builder Card - Center and larger */}
+            {/* Custom Test Builder Card - Center and larger */}
             <div className="relative z-10 group">
               <div className="bg-white p-3 rounded-2xl shadow-3xl scale-110">
                 <div className="relative overflow-hidden rounded-xl">
                   <img 
-                    src="/2.jpg" 
-                    alt="Test Builder" 
+                    src="/Custom_Test.jpeg" 
+                    alt="Custom Test Builder" 
                     className="w-72 h-auto object-cover"
                     style={{ 
                       clipPath: 'inset(60px 0 80px 0)',
