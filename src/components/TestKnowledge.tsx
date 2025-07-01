@@ -30,7 +30,7 @@ const TestKnowledge: React.FC = () => {
               </div>
               
               {/* Decorative elements */}
-              <div className="absolute -top-1 -right-1 w-6 h-6 bg-yellow-400 rounded-full opacity-80 animate-pulse"></div>
+              <div className="absolute -top-1 -right-1 w-6 h-6 bg-yellow-400 rounded-full opacity-80 animate-bounce"></div>
               <div className="absolute -bottom-1 -left-1 w-4 h-4 bg-white/30 rounded-full"></div>
             </a>
             
