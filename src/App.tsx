@@ -7,6 +7,7 @@ import Testimonials from './components/Testimonials';
 import WhyReflex from './components/WhyReflex';
 import CTA from './components/CTA';
 import Footer from './components/Footer';
+import TestKnowledge from './components/TestKnowledge';
 
 function App() {
   useEffect(() => {
@@ -34,6 +35,7 @@ function App() {
       <Header />
       <Hero />
       <Features />
+      <TestKnowledge />
       <Plans />
       <Testimonials />
       <WhyReflex />
