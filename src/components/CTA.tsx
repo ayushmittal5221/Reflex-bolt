@@ -77,7 +77,7 @@ const CTA: React.FC = () => {
               <div className="bg-white p-3 rounded-2xl shadow-3xl scale-110">
                 <div className="relative overflow-hidden rounded-xl">
                   <img 
-                    src="/Custom_Test.jpeg" 
+                    src="/image copy copy copy copy copy copy copy copy copy.png" 
                     alt="Custom Test Builder" 
                     className="w-72 h-auto object-cover"
                     style={{ 
