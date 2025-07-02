@@ -15,7 +15,7 @@ export const PLANS: Plan[] = [
     duration: 6,
     price: 999,
     features: [
-      'Access to 10,000+ PYQs',
+      'Access to 7000+ PYQs',
       'Basic handwritten notes',
       'Custom test creation',
       'Mobile & web access',
@@ -29,7 +29,7 @@ export const PLANS: Plan[] = [
     duration: 12,
     price: 1799,
     features: [
-      'Access to 10,000+ PYQs',
+      'Access to 7000+ PYQs',
       'Complete handwritten notes',
       'Custom test creation',
       'Mobile & web access',
@@ -45,7 +45,7 @@ export const PLANS: Plan[] = [
     duration: 24,
     price: 2099,
     features: [
-      'Access to 10,000+ PYQs',
+      'Access to 7000+ PYQs',
       'Complete handwritten notes',
       'Custom test creation',
       'Mobile & web access',
@@ -61,7 +61,7 @@ export const PLANS: Plan[] = [
     duration: 36,
     price: 2399,
     features: [
-      'Access to 10,000+ PYQs',
+      'Access to 7000+ PYQs',
       'Complete handwritten notes',
       'Custom test creation',
       'Mobile & web access',
@@ -79,7 +79,7 @@ export const PLANS: Plan[] = [
     price: 2999,
     features: [
       '1st & 2nd Year? Perfect Time to Build Your Success Story.',
-      'Access to 10,000+ PYQs',
+      'Access to 7000+ PYQs',
       'Complete handwritten notes',
       'Custom test creation',
       'Mobile & web access',
